@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #020631;
+  background-color: #51557E;
 }
 
 .app {
@@ -86,3 +86,28 @@ h2 {
   color: grey;
 }
 
+.one {
+  grid-column: 2;
+  grid-row: 4;
+}
+.two {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.strikethrough:checked + span{
+  text-decoration:line-through
+}
+
+#ip2 {
+  border-radius: 25px;
+  border: 2px solid #51557E;
+  padding: 20px; 
+  width: 200px;
+  height: 15px;    
+}
+
+tab {
+  display: flex;
+  justify-content: space-between;
+}
