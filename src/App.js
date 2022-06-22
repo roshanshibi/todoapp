@@ -14,7 +14,7 @@ function App() {
     
     <div className="app">
     
-<div class="">
+<div>
     <div class="w3-panel w3-card-4 w3-grey">
       <div className="mainHeading">
         <h1>ToDo List</h1>
@@ -32,12 +32,12 @@ function App() {
       </div>
       
 
-      <div class="">
+      <div>
     <div class="w3-panel w3-card-4 w3-grey">
       <div className="todos">
         <h1>Ongoing</h1>
 
-        { toDos.map((obj,key)=>{
+        { toDos.map((obj)=>{
 
         return (<div className="todo">
           <div className="left">
@@ -49,7 +49,7 @@ function App() {
                 return obj2
             }))}} value={obj.status} class="strikethrough" type="checkbox" name="" id="" />
             <span><p>{obj.text}</p></span>
-          </div><br/>
+          </div>
           <div className="right">
             <i onClick={() => {
                   if (window.confirm("Are you sure ?")) {
@@ -67,6 +67,7 @@ function App() {
         </div>)
 })}
         </div>
+        <br/>
       </div>
     </div>
   </div>
@@ -74,8 +75,8 @@ function App() {
 
 
 
-{/* Completed container_________________________________________________________ */}
-      <div class="">
+
+ <div>
     <div class="w3-panel w3-card-4 w3-grey">
     <div className="todos">
       <h1 align="center">Completed</h1>
@@ -96,16 +97,16 @@ function App() {
     }
     return null
   })
-}
+}     <br/>
       </div>
       </div>
       </div>
-{/* ________________________________________________________________________ */}
 
 
 
-{/* Deleted container_________________________________________________________ */}
-      <div class="">
+
+
+ <div >
     <div class="w3-panel w3-card-4 w3-grey">
     <div className="todos">
       <h1 align="center">Deleted</h1>
@@ -116,11 +117,11 @@ function App() {
     }
     return null
   })
-}
+}     <br/>
       </div>
       </div>
       </div>
-{/* ________________________________________________________________________ */}
+
 
 
     </div>
